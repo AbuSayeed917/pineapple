@@ -1,0 +1,88 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        luxury: {
+          50: '#fafaf9',
+          100: '#f5f5f4',
+          200: '#e7e5e4',
+          300: '#d6d3d1',
+          400: '#a8a29e',
+          500: '#78716c',
+          600: '#57534e',
+          700: '#44403c',
+          800: '#292524',
+          900: '#1c1917',
+          950: '#0c0a09',
+        },
+        accent: {
+          50: '#fdf8f3',
+          100: '#faf0e6',
+          200: '#f4e0cc',
+          300: '#edc9a3',
+          400: '#e5ad73',
+          500: '#d4925f',
+          600: '#c07a4a',
+          700: '#a0633f',
+          800: '#815138',
+          900: '#6a4430',
+        },
+        premium: {
+          gold: '#d4af37',
+          'gold-light': '#f4e4c1',
+          'gold-dark': '#b8941f',
+          silver: '#c0c0c0',
+          bronze: '#cd7f32',
+        },
+        neutral: {
+          50: '#fafafa',
+          100: '#f5f5f5',
+          150: '#efefef',
+          200: '#e5e5e5',
+          300: '#d4d4d4',
+          400: '#a3a3a3',
+          500: '#737373',
+          600: '#525252',
+          700: '#404040',
+          800: '#262626',
+          900: '#171717',
+          950: '#0a0a0a',
+        },
+      },
+      fontFamily: {
+        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+        serif: ['Playfair Display', 'Georgia', 'Cambria', 'Times New Roman', 'serif'],
+      },
+      fontSize: {
+        'display-xl': ['7.5rem', { lineHeight: '1', letterSpacing: '-0.05em', fontWeight: '800' }],
+        'display-lg': ['6rem', { lineHeight: '1', letterSpacing: '-0.048em', fontWeight: '800' }],
+        'display-md': ['4.5rem', { lineHeight: '1.1', letterSpacing: '-0.04em', fontWeight: '700' }],
+        'display-sm': ['3.75rem', { lineHeight: '1.1', letterSpacing: '-0.035em', fontWeight: '700' }],
+      },
+      spacing: {
+        '18': '4.5rem',
+        '22': '5.5rem',
+        '26': '6.5rem',
+        '30': '7.5rem',
+      },
+      borderRadius: {
+        'xl': '1rem',
+        '2xl': '1.25rem',
+        '3xl': '1.5rem',
+        '4xl': '2rem',
+      },
+      boxShadow: {
+        'soft': '0 2px 8px rgba(0, 0, 0, 0.04)',
+        'medium': '0 4px 16px rgba(0, 0, 0, 0.06)',
+        'large': '0 8px 32px rgba(0, 0, 0, 0.08)',
+        'xl': '0 12px 48px rgba(0, 0, 0, 0.12)',
+      },
+    },
+  },
+  plugins: [],
+}
