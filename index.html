@@ -7,7 +7,20 @@
       <title>Onyx Protocol | Digital Intelligence</title>
       <meta name="description" content="Onyx Protocol is a high-performance digital agency building the future of the web. Engineering first. Aesthetics second. Compromise never." />
       <meta name="theme-color" content="#030303" />
-      <script type="module" crossorigin src="/pineapple/assets/index-DBllJUuy.js"></script>
+      <!-- GitHub Pages SPA redirect handler -->
+      <script>
+        (function(l) {
+          if (l.search[1] === '/') {
+            var decoded = l.search.slice(1).split('&').map(function(s) {
+              return s.replace(/~and~/g, '&')
+            }).join('?');
+            window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+            );
+          }
+        }(window.location))
+      </script>
+      <script type="module" crossorigin src="/pineapple/assets/index-Bf_q6E8c.js"></script>
       <link rel="stylesheet" crossorigin href="/pineapple/assets/index-BRZOnv6k.css">
     </head>
 
